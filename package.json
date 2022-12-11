@@ -5,6 +5,16 @@
   "repository": "https://github.com/airewatterson/musicbot_front_ffi",
   "author": "airewatterson <airewatterson@gmail.com>",
   "license": "GPLv3",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "lint": "xo --fix",
+    "lint:watch": "xo --watch",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check .",
+    "prettier:watch": "prettier --write --watch .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
