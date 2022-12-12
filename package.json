@@ -1,36 +1,14 @@
 {
-  "name": "musicbot_front_ffi",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/airewatterson/musicbot_front_ffi",
-  "author": "airewatterson <airewatterson@gmail.com>",
-  "license": "GPLv3",
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc -w",
-    "lint": "xo --fix",
-    "lint:watch": "xo --watch",
-    "prettier": "prettier --write .",
-    "prettier:check": "prettier --check .",
-    "prettier:watch": "prettier --write --watch .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nx exec -- xo"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.46.0",
-    "@typescript-eslint/parser": "^5.46.0",
-    "eslint": ">=8.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-xo": "^0.43.1",
-    "eslint-config-xo-typescript": "^0.55.1",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.1",
-    "prettier-config-xo": "^2.0.0",
-    "prettier-eslint": "^15.0.1",
-    "typescript": ">=4.4",
+    "@nrwl/nx-cloud": "latest",
+    "nx": "15.3.0",
+    "typescript": "^4.9.4",
     "xo": "^0.53.1"
   },
-  "dependencies": {
-    "@wasmer/wasi": "^1.2.2",
-    "discord.js": "^14.7.1"
+  "nx": {
+    "targets": {}
   }
 }
